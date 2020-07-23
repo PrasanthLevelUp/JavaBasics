@@ -69,7 +69,7 @@ public class Stringsdemo {
 		  
 		  System.out.println(cha);
 		  
-		  //spilt String[] str7 = str1.split(";");
+		  String[] str7 = str1.split(";");
 		  
 		  for(String s:str7) {
 		  

@@ -8,6 +8,8 @@ public class MergeSort {
     void merge(int arr[], int l, int m, int r) 
     { 
         // Find sizes of two subarrays to be merged 
+    	System.out.println("Before Merge");
+    	  printArray(arr); 
         int n1 = m - l + 1; 
         int n2 = r - m; 
   
@@ -28,7 +30,7 @@ public class MergeSort {
   
         // Initial index of merged subarry array 
         int k = l; 
-        while (i < n1 && j < n2) { 
+         while (i < n1 && j < n2) { 
             if (L[i] <= R[j]) { 
                 arr[k] = L[i]; 
                 System.out.println(arr[k]);
@@ -55,6 +57,9 @@ public class MergeSort {
             j++; 
             k++; 
         } 
+        
+        System.out.println("After Merge");
+        printArray(arr);
     } 
   
     // Main function that sorts arr[l..r] using 
@@ -66,8 +71,12 @@ public class MergeSort {
             int m = (l + r) / 2; 
   
             // Sort first and second halves 
+            System.out.println("Sort first");
             sort(arr, l, m); 
-            sort(arr, m + 1, r); 
+            //printArray(arr); 
+           System.out.println("Sort second");
+            sort(arr, m + 1, r);
+          //  printArray(arr); 
   
             // Merge the sorted halves 
             merge(arr, l, m, r); 
@@ -86,7 +95,7 @@ public class MergeSort {
     // Driver method 
     public static void main(String args[]) 
     { 
-        int arr[] = { 12, 11, 13, 5, 6, 7 }; 
+        int arr[] = { 38,27,43,3,9,82,10}; 
   
         System.out.println("Given Array"); 
         printArray(arr); 
@@ -96,5 +105,5 @@ public class MergeSort {
   
         System.out.println("\nSorted array"); 
         printArray(arr); 
-    } 
+     } 
 }

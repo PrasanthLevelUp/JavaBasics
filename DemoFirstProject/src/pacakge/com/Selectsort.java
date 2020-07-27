@@ -8,8 +8,7 @@ public class Selectsort {
 		
 		for(int i:number) {
 			System.out.print(i+" ");
-		}
-		
+		}	
 		
 		int len = number.length;
 		System.out.println();
@@ -22,14 +21,12 @@ public class Selectsort {
 				//System.out.print(" "+j);
 				if(number[j]<number[min]) {
 					min=j;
-				}
+				}		
+			}
 			
-		
 			int temp = number[min];
 			number[min] = number[i];
 			number[i]=temp;
-			
-			}
 			for(int k:number) {
 				System.out.print(k+" ");}
 		}

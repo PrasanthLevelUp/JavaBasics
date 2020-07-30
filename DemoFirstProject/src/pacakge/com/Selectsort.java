@@ -31,8 +31,7 @@ public class Selectsort {
 				System.out.print(k+" ");}
 		}
 		System.out.println();
-		for(int i:number) {
-			System.out.print(i+" ");}
+		
 	}
 
 	}

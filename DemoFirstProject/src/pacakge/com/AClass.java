@@ -5,7 +5,7 @@ public class AClass {
 	
 	private int a;
 
-/*	public void show() {
+	public void show() {
 
 		System.out.println("Parent mehtod");
 	}
@@ -27,7 +27,7 @@ public class AClass {
 	}
 	public void range(char a, int t) {
 
-	}*/
+	}
 
 	public int getA() {
 		return a;

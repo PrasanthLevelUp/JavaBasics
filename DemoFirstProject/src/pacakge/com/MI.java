@@ -44,4 +44,10 @@ public class MI extends AbstractClass implements Interfaceclasss,Inter2{
 		
 	}
 
+	@Override
+	public void test56() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

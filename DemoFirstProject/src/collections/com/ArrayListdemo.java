@@ -30,7 +30,7 @@ public class ArrayListdemo {
 
 			
 	
-	/*	
+		
 		ArrayList<Integer> li = new ArrayList();
 		ArrayList li3 = new ArrayList(20);
 
@@ -61,20 +61,24 @@ public class ArrayListdemo {
 		for(int i =0;i<li.size();i++) {
 
 		}
+		
+		li.forEach(a->{
+			System.out.println("Foreach mehtod: "+a);
+		});
 
 		for(int i : li) {
 
 		}
 
-		Iterator it = li.iterator();
+		Iterator it1 = li.iterator();
 
-		while(it.hasNext()) {
-			System.out.println(it.next());
+		while(it1.hasNext()) {
+			System.out.println("Iterator Method: " +it1.next());
 		}
 
 
 
-*/
+
 	}
 
 }

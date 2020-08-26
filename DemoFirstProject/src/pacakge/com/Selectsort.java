@@ -3,13 +3,13 @@ package pacakge.com;
 public class Selectsort {
 
 	public static void main(String[] args) {
-	
+
 		int[] number= {5,1,-2,4,6};
-		
+
 		for(int i:number) {
 			System.out.print(i+" ");
 		}	
-		
+
 		int len = number.length;
 		System.out.println();
 
@@ -23,17 +23,11 @@ public class Selectsort {
 					min=j;
 				}		
 			}
-			
+
 			int temp = number[min];
 			number[min] = number[i];
 			number[i]=temp;
-			for(int k:number) {
-				System.out.print(k+" ");}
+
 		}
-		System.out.println();
-		
 	}
-
-	}
-
-
+}
